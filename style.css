@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*::selection{
+    background-color: black;
+    color: white;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+.cursor{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    background-color: rgb(181, 164, 144);
+    position: fixed;
+    scale: 0;
+    opacity: 0;
+    /* z-index: 78; */
+}
+.page1{
+    height: 100vh;
+}
+.page1 h1{
+    margin-top: 17vh;
+    font-size: 25vh;
+    line-height: 0.09;
+    letter-spacing: -2;
+}
+#play{
+    /* width:30px;
+    height: 30px; */
+    padding: 2.8vh 2vh;
+    position: fixed;
+    border-radius: 50%;
+    font-size: 1vw;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    scale: 0;
+}
+#video-container{
+    width: 100%;
+    height: 100vh;
+    margin: 3vh 5vh;
+    /* padding-right: 14vh; */
+    margin-top: 20vh;
+    position: relative;
+
+}
+#video-container video{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.page2{
+    margin-top: 50vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    /* margin-top: 20vh; */
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.page2 div{
+    width:25%;
+    height:80%;
+    background-color: blue;
+    border-radius: 10px;   
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2 div img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;   
+    position: relative;
+    
+}
+.page2 div .det{
+    position: absolute;
+    width: 70%;
+    height: 7%;
+    background-color: rgb(207, 181, 181);
+    z-index: 99;
+}
+.page2 div .det:hover{
+    height: 30%;
+}
+.page3{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    /* gap:90px; */
+}
+.page3 .elem{
+    width:25%;
+    height: 30vh;
+    position: relative;
+    padding: 10vh 10vw;
+}
+.page3 .elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
