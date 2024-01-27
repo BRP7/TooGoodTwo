@@ -9,7 +9,6 @@ function videoAnimation() {
             gsap.to(playBtn, {
                 scale: 1,
                 opacity: 1,
-                // backgroundColor: "gray"
             });
         });
       
